@@ -1,0 +1,27 @@
+{
+  "entry": "src/index.js",
+    "theme": {
+     "fill-body":"red",
+     "fill-base": "green",
+     "table-title-height": "600px",
+     "fill-base": "#fff",
+     "table-title-height": "600px",
+     "fill-base": "#1DA57A",  //
+    "link-color": "#1DA57A",
+    "border-radius-base": "2px"
+},
+  "env": {
+    "development": {
+      "extraBabelPlugins": [
+        "dva-hmr",
+       "transform-runtime",
+       ["import", { "libraryName": "antd", "style": true}]
+      ]
+    },
+    "production": {
+      "extraBabelPlugins": [
+        "transform-runtime"
+      ]
+    }
+  }
+}
